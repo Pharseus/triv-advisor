@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Advisor - Explore the World</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1 class="logo">Trip Advisor</h1>
+            <div class="user-menu" id="userMenu" style="display: none;">
+                <div class="user-info">
+                    <img id="userAvatar" class="user-avatar" src="" alt="User">
+                    <span id="userName" class="user-name"></span>
+                </div>
+                <button id="logoutBtn" class="logout-btn">
+                    <i class="fas fa-sign-out-alt"></i> Logout
+                </button>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Sidebar - Favorites -->
+            <aside class="sidebar">
+                <h2 class="sidebar-title">Favourite</h2>
+                <div id="favoritesList" class="favorites-list">
+                    <p class="empty-message">Belum ada favorit</p>
+                </div>
+            </aside>
+
+            <!-- Content Area -->
+            <main class="content">
+                <!-- Country Selector & Controls -->
+                <div class="tabs-container">
+                    <!-- Country Dropdown -->
+                    <div class="country-selector-wrapper">
+                        <button id="countryDropdownBtn" class="country-dropdown-btn">
+                            <i class="fas fa-globe"></i>
+                            <span id="selectedCountryName">Select Country</span>
+                            <i class="fas fa-chevron-down dropdown-icon"></i>
+                        </button>
+                        
+                        <!-- Dropdown Menu -->
+                        <div id="countryDropdown" class="country-dropdown">
+                            <div class="dropdown-search">
+                                <input type="text" id="countrySearchInput" class="country-search-input" placeholder="Search countries...">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            
+                            <div class="dropdown-content">
+                                <!-- Popular Countries -->
+                                <div class="popular-section">
+                                    <h4 class="dropdown-section-title">Popular</h4>
+                                    <div id="popularCountriesList" class="country-list">
+                                        <!-- Popular countries will be loaded -->
+                                    </div>
+                                </div>
+                                
+                                <!-- All Countries -->
+                                <div class="all-countries-section">
+                                    <h4 class="dropdown-section-title">All Countries</h4>
+                                    <div id="allCountriesList" class="country-list">
+                                        <!-- All countries will be loaded -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="search-controls">
+                        <!-- Search Bar -->
+                        <div class="search-container">
+                            <input type="text" id="searchInput" class="search-input" placeholder="Search destinations...">
+                            <i class="fas fa-search search-icon"></i>
+                        </div>
+                        
+                        <!-- Dark Mode Toggle -->
+                        <button id="darkModeToggle" class="dark-mode-toggle" aria-label="Toggle dark mode">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Places Grid -->
+                <div id="placesGrid" class="places-grid">
+                    <!-- Loading state -->
+                    <div class="loading">
+                        <i class="fas fa-spinner fa-spin"></i>
+                        <p>Loading destinations...</p>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Modal for Place Details -->
+    <div id="placeModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle" class="modal-title"></h2>
+                <button id="closeModal" class="close-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="modal-body">
+                <!-- Place Image -->
+                <div class="modal-image-container">
+                    <img id="modalImage" src="" alt="" class="modal-image">
+                </div>
+
+                <!-- Rating and Actions -->
+                <div class="modal-actions">
+                    <div id="modalRating" class="rating"></div>
+                    <div class="action-buttons">
+                        <button id="locationBtn" class="action-btn location-btn">
+                            <i class="fas fa-map-marker-alt"></i> Location
+                        </button>
+                        <button id="favoriteBtn" class="action-btn favorite-btn">
+                            <i class="far fa-star"></i> Add Fav.
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Description -->
+                <div class="modal-description">
+                    <p id="modalDescription"></p>
+                </div>
+
+                <!-- Things to do -->
+                <div class="activities-section">
+                    <h3 class="section-title">Things to do</h3>
+                    <div id="activitiesList" class="activities-list">
+                        <!-- Activities will be loaded dynamically -->
+                    </div>
+                </div>
+
+                <!-- Similar Locations -->
+                <div class="similar-section">
+                    <h3 class="section-title">Lokasi serupa</h3>
+                    <div id="similarPlaces" class="similar-places">
+                        <!-- Similar places will be loaded dynamically -->
+                    </div>
+                </div>
+
+                <!-- Comments Section -->
+                <div class="comments-section">
+                    <h3 class="section-title">Komentar</h3>
+                    
+                    <!-- Comments List -->
+                    <div id="commentsList" class="comments-list">
+                        <!-- Comments will be loaded dynamically -->
+                    </div>
+
+                    <!-- Load More Button -->
+                    <button id="loadMoreComments" class="load-more-btn" style="display: none;">
+                        <i class="fas fa-chevron-down"></i> Muat Lebih Banyak
+                    </button>
+
+                    <!-- Add Comment Form -->
+                    <div class="add-comment-form">
+                        <h4 class="form-title">Tambah Komentar</h4>
+                        <div class="form-group">
+                            <input type="text" id="commentUserName" class="comment-input" placeholder="Nama Anda" maxlength="50">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="commentText" class="comment-textarea" placeholder="Tulis komentar Anda..." rows="4" maxlength="500"></textarea>
+                        </div>
+                        <button id="submitComment" class="submit-comment-btn">
+                            <i class="fas fa-paper-plane"></i> Kirim Komentar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 class="footer-title">Trip Advisor</h3>
+                <p class="footer-description">Explore the world's most beautiful destinations. Plan your perfect trip with our comprehensive travel guide.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- <div class="footer-section">
+                <h4 class="footer-subtitle">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Destinations</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                </ul>
+            </div> -->
+
+            <div class="footer-section">
+                <h4 class="footer-subtitle">Popular Destinations</h4>
+                <ul class="footer-links">
+                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> Borobudur, Indonesia</a></li>
+                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> Tokyo, Japan</a></li>
+                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> Paris, France</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4 class="footer-subtitle">Contact Info</h4>
+                <ul class="footer-contact">
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span>info@tripadvisor.com</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone"></i>
+                        <span>+62 123 4567 890</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Jakarta, Indonesia</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Trip Advisor. All rights reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <span>•</span>
+                <a href="#">Terms of Service</a>
+                <span>•</span>
+                <a href="#">Sitemap</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+    
+    <!-- App Scripts -->
+    <script src="firebase-config.js"></script>
+    
+    <!-- Auth Guard -->
+    <script>
+        // Check if user is logged in, redirect to login if not
+        firebase.auth().onAuthStateChanged((user) => {
+            if (!user) {
+                // User is not logged in, redirect to login page
+                window.location.href = '/login.html';
+            } else {
+                console.log('User authenticated:', user.email);
+                // Store current user globally
+                window.currentUser = user;
+                
+                // Display user info in header
+                const userMenu = document.getElementById('userMenu');
+                const userName = document.getElementById('userName');
+                const userAvatar = document.getElementById('userAvatar');
+                const logoutBtn = document.getElementById('logoutBtn');
+                
+                if (userMenu && userName && userAvatar) {
+                    // Show user menu
+                    userMenu.style.display = 'flex';
+                    
+                    // Set user name
+                    userName.textContent = user.displayName || user.email.split('@')[0];
+                    
+                    // Set user avatar
+                    if (user.photoURL) {
+                        userAvatar.src = user.photoURL;
+                    } else {
+                        // Default avatar with user initial
+                        const initial = (user.displayName || user.email).charAt(0).toUpperCase();
+                        userAvatar.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(initial)}&background=1976D2&color=fff&size=128`;
+                    }
+                    
+                    // Logout handler
+                    if (logoutBtn) {
+                        logoutBtn.addEventListener('click', async () => {
+                            try {
+                                await firebase.auth().signOut();
+                                window.location.href = '/login.html';
+                            } catch (error) {
+                                console.error('Error signing out:', error);
+                                alert('Gagal logout. Silakan coba lagi.');
+                            }
+                        });
+                    }
+                }
+            }
+        });
+    </script>
+    
+    <script src="app.js"></script>
+</body>
+</html>

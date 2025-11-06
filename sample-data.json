@@ -1,0 +1,525 @@
+{
+  "countries": [
+    {
+      "id": "japan",
+      "nama": "Japan",
+      "deskripsi_singkat": "Negara matahari terbit dengan perpaduan sempurna antara   tradisi kuno dan teknologi modern",
+      "url_gambar_utama": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf",
+      "benua": "Asia"
+    },
+    {
+      "id": "indonesia",
+      "nama": "Indonesia",
+      "deskripsi_singkat": "Negara kepulauan terbesar di dunia dengan kekayaan budaya dan keindahan alam yang luar biasa",
+      "url_gambar_utama": "https://images.unsplash.com/photo-1537996194471-e657df975ab4",
+      "benua": "Asia"
+    },
+    {
+      "id": "singapore",
+      "nama": "Singapore",
+      "deskripsi_singkat": "Kota negara modern dengan arsitektur futuristik dan kuliner yang menggugah selera",
+      "url_gambar_utama": "https://images.unsplash.com/photo-1525625293386-3f8f99389edd",
+      "benua": "Asia"
+    },
+    {
+      "id": "france",
+      "nama": "France",
+      "deskripsi_singkat": "Negara romantis dengan menara Eiffel, museum kelas dunia, dan kuliner yang menggugah selera",
+      "url_gambar_utama": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34",
+      "benua": "Europe"
+    },
+    {
+      "id": "ireland",
+      "nama": "Ireland",
+      "deskripsi_singkat": "Pulau zamrud dengan pemandangan hijau yang memukau, kastil bersejarah, dan budaya Celtic yang kaya",
+      "url_gambar_utama": "https://images.unsplash.com/photo-1590086782792-42dd2350140d",
+      "benua": "Europe"
+    }
+  ],
+  "places": {
+    "japan": [
+      {
+        "id": "tokyo-tower",
+        "nama": "Tokyo Tower",
+        "deskripsi_lengkap": "Menara ikonik setinggi 333 meter yang menjadi simbol Tokyo. Dibangun pada tahun 1958, menara ini menawarkan pemandangan spektakuler kota Tokyo dari dua observation deck. Di malam hari, menara ini diterangi dengan lampu oranye yang indah.",
+        "url_gambar_utama": "https://images.unsplash.com/photo-1513407030348-c983a97b98d8",
+        "rating": 4.5,
+        "kategori": "landmark",
+        "lokasi": {
+          "latitude": 35.6586,
+          "longitude": 139.7454
+        },
+        "gallery_gambar": [
+          "https://images.unsplash.com/photo-1513407030348-c983a97b98d8",
+          "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc"
+        ]
+      },
+      {
+        "id": "akihabara",
+        "nama": "Akihabara",
+        "deskripsi_lengkap": "Distrik elektronik dan budaya pop Jepang yang terkenal. Surga bagi penggemar anime, manga, dan teknologi. Jalan-jalan dipenuhi dengan toko elektronik, arcade game, dan maid cafe yang unik.",
+        "url_gambar_utama": "https://images.unsplash.com/photo-1542051841857-5f90071e7989",
+        "rating": 4.3,
+        "kategori": "district",
+        "lokasi": {
+          "latitude": 35.7022,
+          "longitude": 139.7744
+        },
+        "gallery_gambar": [
+          "https://images.unsplash.com/photo-1542051841857-5f90071e7989"
+        ]
+      },
+      {
+        "id": "kyoto-castle",
+        "nama": "Kyoto Castle",
+        "deskripsi_lengkap": "Kastil bersejarah yang megah dengan arsitektur tradisional Jepang. Dikelilingi oleh taman yang indah dan parit yang luas. Merupakan situs warisan dunia UNESCO yang wajib dikunjungi.",
+        "url_gambar_utama": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e",
+        "rating": 4.8,
+        "kategori": "castle",
+        "lokasi": {
+          "latitude": 35.0116,
+          "longitude": 135.7681
+        },
+        "gallery_gambar": [
+          "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e"
+        ]
+      },
+      {
+        "id": "shibuya",
+        "nama": "Shibuya",
+        "deskripsi_lengkap": "Persimpangan paling ramai di dunia dengan lampu neon yang memukau. Pusat mode dan hiburan Tokyo yang tidak pernah tidur. Terkenal dengan Shibuya Crossing dan patung Hachiko.",
+        "url_gambar_utama": "https://images.unsplash.com/photo-1542051841857-5f90071e7989",
+        "rating": 4.6,
+        "kategori": "district",
+        "lokasi": {
+          "latitude": 35.6617,
+          "longitude": 139.7040
+        },
+        "gallery_gambar": []
+      },
+      {
+        "id": "osaka-castle",
+        "nama": "Osaka Castle",
+        "deskripsi_lengkap": "Kastil megah dengan sejarah yang kaya sejak abad ke-16. Dikelilingi oleh taman yang luas dengan pohon sakura yang indah di musim semi. Museum di dalamnya menampilkan sejarah Jepang yang menarik.",
+        "url_gambar_utama": "https://images.unsplash.com/photo-1590559899731-a382839e5549",
+        "rating": 4.7,
+        "kategori": "castle",
+        "lokasi": {
+          "latitude": 34.6873,
+          "longitude": 135.5262
+        },
+        "gallery_gambar": []
+      },
+      {
+        "id": "nara-park",
+        "nama": "Nara Park",
+        "deskripsi_lengkap": "Taman luas yang terkenal dengan rusa-rusa jinak yang berkeliaran bebas. Pengunjung dapat memberi makan rusa dengan senbei (kerupuk khusus). Taman ini juga memiliki kuil-kuil bersejarah yang indah.",
+        "url_gambar_utama": "https://images.unsplash.com/photo-1528360983277-13d401cdc186",
+        "rating": 4.9,
+        "kategori": "park",
+        "lokasi": {
+          "latitude": 34.6851,
+          "longitude": 135.8048
+        },
+        "gallery_gambar": []
+      }
+    ],
+    "indonesia": [
+      {
+        "id": "borobudur",
+        "nama": "Borobudur",
+        "deskripsi_lengkap": "Candi Buddha terbesar di dunia yang dibangun pada abad ke-9. Situs warisan dunia UNESCO dengan arsitektur yang menakjubkan dan relief yang menceritakan kisah Buddha. Pemandangan matahari terbit dari puncak candi sangat spektakuler.",
+        "url_gambar_utama": "https://images.unsplash.com/photo-1596422846543-75c6fc197f07",
+        "rating": 4.9,
+        "kategori": "temple",
+        "lokasi": {
+          "latitude": -7.6079,
+          "longitude": 110.2038
+        },
+        "gallery_gambar": []
+      },
+      {
+        "id": "danau-toba",
+        "nama": "Danau Toba",
+        "deskripsi_lengkap": "Danau vulkanik terbesar di dunia yang terbentuk dari letusan super volcano 74.000 tahun lalu. Di tengah danau terdapat Pulau Samosir yang menawarkan budaya Batak yang kaya dan pemandangan yang memukau.",
+        "url_gambar_utama": "https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272",
+        "rating": 4.7,
+        "kategori": "lake",
+        "lokasi": {
+          "latitude": 2.6845,
+          "longitude": 98.8756
+        },
+        "gallery_gambar": []
+      }
+    ],
+    "singapore": [
+      {
+        "id": "marina-bay-sands",
+        "nama": "Marina Bay Sands",
+        "deskripsi_lengkap": "Kompleks resort mewah dengan arsitektur ikonik berbentuk kapal di atas tiga menara. Infinity pool di rooftop menawarkan pemandangan skyline Singapore yang menakjubkan. Terdapat juga casino, mall, dan museum seni.",
+        "url_gambar_utama": "https://images.unsplash.com/photo-1525625293386-3f8f99389edd",
+        "rating": 4.8,
+        "kategori": "landmark",
+        "lokasi": {
+          "latitude": 1.2834,
+          "longitude": 103.8607
+        },
+        "gallery_gambar": []
+      },
+      {
+        "id": "gardens-by-the-bay",
+        "nama": "Gardens by the Bay",
+        "deskripsi_lengkap": "Taman futuristik dengan Supertree Grove yang ikonik. Cloud Forest dan Flower Dome menawarkan pengalaman botanical yang luar biasa. Di malam hari, pertunjukan cahaya dan musik di Supertree sangat memukau.",
+        "url_gambar_utama": "https://images.unsplash.com/photo-1562992932-a7c035b9e1a8",
+        "rating": 4.9,
+        "kategori": "park",
+        "lokasi": {
+          "latitude": 1.2816,
+          "longitude": 103.8636
+        },
+        "gallery_gambar": []
+      }
+    ],
+    "france": [
+      {
+        "id": "eiffel-tower",
+        "nama": "Eiffel Tower",
+        "deskripsi_lengkap": "Menara besi ikonik setinggi 330 meter yang menjadi simbol Paris dan Prancis. Dibangun pada tahun 1889 untuk Pameran Dunia, menara ini menawarkan pemandangan spektakuler kota Paris dari tiga tingkat observasi. Di malam hari, menara ini berkilauan dengan 20.000 lampu yang memukau.",
+        "url_gambar_utama": "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f",
+        "rating": 4.8,
+        "kategori": "landmark",
+        "lokasi": {
+          "latitude": 48.8584,
+          "longitude": 2.2945
+        },
+        "gallery_gambar": [
+          "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f",
+          "https://images.unsplash.com/photo-1502602898657-3e91760cbb34"
+        ]
+      },
+      {
+        "id": "louvre-museum",
+        "nama": "Louvre Museum",
+        "deskripsi_lengkap": "Museum seni terbesar dan paling banyak dikunjungi di dunia. Menampung lebih dari 380.000 objek dan 35.000 karya seni termasuk Mona Lisa dan Venus de Milo. Bangunan istana yang megah dengan piramida kaca modern di halamannya.",
+        "url_gambar_utama": "https://images.unsplash.com/photo-1499856871958-5b9627545d1a",
+        "rating": 4.9,
+        "kategori": "museum",
+        "lokasi": {
+          "latitude": 48.8606,
+          "longitude": 2.3376
+        },
+        "gallery_gambar": []
+      },
+      {
+        "id": "versailles-palace",
+        "nama": "Palace of Versailles",
+        "deskripsi_lengkap": "Istana megah bekas kediaman Raja Louis XIV dengan arsitektur Baroque yang menakjubkan. Terkenal dengan Hall of Mirrors yang memukau dan taman yang luas seluas 800 hektar. Situs warisan dunia UNESCO yang wajib dikunjungi.",
+        "url_gambar_utama": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa",
+        "rating": 4.7,
+        "kategori": "palace",
+        "lokasi": {
+          "latitude": 48.8049,
+          "longitude": 2.1204
+        },
+        "gallery_gambar": []
+      },
+      {
+        "id": "mont-saint-michel",
+        "nama": "Mont Saint-Michel",
+        "deskripsi_lengkap": "Pulau berbatu dengan biara abad pertengahan yang dramatis di puncaknya. Dikelilingi oleh pasang surut yang spektakuler, menciptakan pemandangan yang berubah-ubah. Salah satu situs paling ikonik di Prancis dan warisan dunia UNESCO.",
+        "url_gambar_utama": "https://images.unsplash.com/photo-1583037189850-1921ae7c6c22",
+        "rating": 4.9,
+        "kategori": "landmark",
+        "lokasi": {
+          "latitude": 48.6361,
+          "longitude": -1.5115
+        },
+        "gallery_gambar": []
+      },
+      {
+        "id": "arc-de-triomphe",
+        "nama": "Arc de Triomphe",
+        "deskripsi_lengkap": "Monumen kemenangan ikonik yang menghormati mereka yang berjuang untuk Prancis. Terletak di pusat Place Charles de Gaulle dengan 12 jalan yang memancar keluar. Pemandangan dari atas menawarkan vista spektakuler Champs-Élysées.",
+        "url_gambar_utama": "https://images.unsplash.com/photo-1550340499-a6c60fc8287c",
+        "rating": 4.6,
+        "kategori": "monument",
+        "lokasi": {
+          "latitude": 48.8738,
+          "longitude": 2.2950
+        },
+        "gallery_gambar": []
+      },
+      {
+        "id": "cote-dazur",
+        "nama": "Côte d'Azur (French Riviera)",
+        "deskripsi_lengkap": "Garis pantai Mediterania yang glamor dengan pantai-pantai indah, kota-kota menawan seperti Nice dan Cannes. Terkenal dengan cuaca cerah, yacht mewah, dan kehidupan malam yang meriah. Destinasi favorit selebriti dan jet-setter dunia.",
+        "url_gambar_utama": "https://images.unsplash.com/photo-1602002418082-a4443e081dd1",
+        "rating": 4.8,
+        "kategori": "beach",
+        "lokasi": {
+          "latitude": 43.7034,
+          "longitude": 7.2663
+        },
+        "gallery_gambar": []
+      }
+    ],
+    "ireland": [
+      {
+        "id": "cliffs-of-moher",
+        "nama": "Cliffs of Moher",
+        "deskripsi_lengkap": "Tebing dramatis setinggi 214 meter yang menghadap Samudra Atlantik. Salah satu pemandangan alam paling spektakuler di Irlandia dengan panorama laut yang memukau. Habitat bagi berbagai burung laut termasuk puffin.",
+        "url_gambar_utama": "https://images.unsplash.com/photo-1590086782792-42dd2350140d",
+        "rating": 4.9,
+        "kategori": "nature",
+        "lokasi": {
+          "latitude": 52.9719,
+          "longitude": -9.4264
+        },
+        "gallery_gambar": [
+          "https://images.unsplash.com/photo-1590086782792-42dd2350140d"
+        ]
+      },
+      {
+        "id": "trinity-college",
+        "nama": "Trinity College Dublin",
+        "deskripsi_lengkap": "Universitas tertua di Irlandia yang didirikan pada 1592 dengan kampus yang indah. Perpustakaan Long Room yang megah menyimpan Book of Kells, manuskrip abad ke-9 yang terkenal. Arsitektur Georgian yang menawan dan taman yang asri.",
+        "url_gambar_utama": "https://images.unsplash.com/photo-1549918864-48ac978761a4",
+        "rating": 4.7,
+        "kategori": "landmark",
+        "lokasi": {
+          "latitude": 53.3438,
+          "longitude": -6.2546
+        },
+        "gallery_gambar": []
+      },
+      {
+        "id": "ring-of-kerry",
+        "nama": "Ring of Kerry",
+        "deskripsi_lengkap": "Rute panorama sepanjang 179 km yang melewati pemandangan paling indah di Irlandia. Gunung, danau, pantai, dan desa-desa menawan sepanjang perjalanan. Salah satu scenic drive terbaik di dunia.",
+        "url_gambar_utama": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23",
+        "rating": 4.8,
+        "kategori": "nature",
+        "lokasi": {
+          "latitude": 51.9167,
+          "longitude": -9.7000
+        },
+        "gallery_gambar": []
+      },
+      {
+        "id": "guinness-storehouse",
+        "nama": "Guinness Storehouse",
+        "deskripsi_lengkap": "Museum interaktif tentang sejarah bir Guinness yang terkenal di dunia. Bangunan tujuh lantai berbentuk pint glass raksasa. Gravity Bar di lantai atas menawarkan pemandangan 360° Dublin sambil menikmati pint Guinness gratis.",
+        "url_gambar_utama": "https://images.unsplash.com/photo-1608039829572-78524f79c4c7",
+        "rating": 4.6,
+        "kategori": "museum",
+        "lokasi": {
+          "latitude": 53.3419,
+          "longitude": -6.2867
+        },
+        "gallery_gambar": []
+      },
+      {
+        "id": "giants-causeway",
+        "nama": "Giant's Causeway",
+        "deskripsi_lengkap": "Formasi batuan vulkanik unik dengan 40.000 kolom basalt berbentuk heksagonal. Terbentuk 60 juta tahun lalu dari letusan gunung berapi. Situs warisan dunia UNESCO dengan legenda menarik tentang raksasa Irlandia.",
+        "url_gambar_utama": "https://images.unsplash.com/photo-1531572753322-ad063cecc140",
+        "rating": 4.9,
+        "kategori": "nature",
+        "lokasi": {
+          "latitude": 55.2408,
+          "longitude": -6.5116
+        },
+        "gallery_gambar": []
+      },
+      {
+        "id": "killarney-national-park",
+        "nama": "Killarney National Park",
+        "deskripsi_lengkap": "Taman nasional pertama di Irlandia dengan pemandangan gunung, danau, dan hutan yang menakjubkan. Rumah bagi rusa merah, elang emas, dan flora langka. Muckross House dan Abbey yang bersejarah terletak di dalam taman.",
+        "url_gambar_utama": "https://images.unsplash.com/photo-1595876655842-1e5c6f8f9d8e",
+        "rating": 4.7,
+        "kategori": "park",
+        "lokasi": {
+          "latitude": 52.0167,
+          "longitude": -9.5667
+        },
+        "gallery_gambar": []
+      }
+    ]
+  },
+  "activities": {
+    "tokyo-tower": [
+      {
+        "nama": "Naik ke Main Observatory",
+        "deskripsi": "Menikmati pemandangan Tokyo dari ketinggian 150 meter dengan lantai kaca yang mendebarkan",
+        "url_gambar": "https://images.unsplash.com/photo-1513407030348-c983a97b98d8",
+        "kategori": "Petualangan",
+        "perkiraan_harga": "¥1,200",
+        "jam_buka": "09:00 - 23:00",
+        "order": 1
+      },
+      {
+        "nama": "Foto di malam hari",
+        "deskripsi": "Mengabadikan keindahan Tokyo Tower yang diterangi lampu oranye spektakuler",
+        "url_gambar": "",
+        "kategori": "Fotografi",
+        "perkiraan_harga": "Gratis",
+        "jam_buka": "18:00 - 23:00",
+        "order": 2
+      },
+      {
+        "nama": "Kunjungi One Piece Tower",
+        "deskripsi": "Theme park indoor bertema anime One Piece di dalam Tokyo Tower",
+        "url_gambar": "",
+        "kategori": "Hiburan",
+        "perkiraan_harga": "¥3,200",
+        "jam_buka": "10:00 - 22:00",
+        "order": 3
+      }
+    ],
+    "borobudur": [
+      {
+        "nama": "Sunrise Tour",
+        "deskripsi": "Menyaksikan matahari terbit yang spektakuler dari puncak candi Borobudur",
+        "url_gambar": "",
+        "kategori": "Alam",
+        "perkiraan_harga": "Rp 450.000",
+        "jam_buka": "04:30 - 06:30",
+        "order": 1
+      },
+      {
+        "nama": "Guided Temple Tour",
+        "deskripsi": "Tur berpemandu mempelajari sejarah dan relief-relief di Borobudur",
+        "url_gambar": "",
+        "kategori": "Budaya",
+        "perkiraan_harga": "Rp 50.000",
+        "jam_buka": "06:00 - 17:00",
+        "order": 2
+      },
+      {
+        "nama": "Cycling Around Temple",
+        "deskripsi": "Bersepeda mengelilingi area candi sambil menikmati pemandangan pedesaan",
+        "url_gambar": "",
+        "kategori": "Petualangan",
+        "perkiraan_harga": "Rp 100.000",
+        "jam_buka": "07:00 - 16:00",
+        "order": 3
+      }
+    ],
+    "eiffel-tower": [
+      {
+        "nama": "Naik ke Puncak Menara",
+        "deskripsi": "Menikmati pemandangan Paris dari ketinggian 276 meter di lantai teratas",
+        "url_gambar": "https://images.unsplash.com/photo-1511739001486-6bfe10ce785f",
+        "kategori": "Petualangan",
+        "perkiraan_harga": "€26",
+        "jam_buka": "09:00 - 00:45",
+        "order": 1
+      },
+      {
+        "nama": "Makan Malam di Le Jules Verne",
+        "deskripsi": "Restoran Michelin-star di lantai 2 dengan pemandangan spektakuler",
+        "url_gambar": "",
+        "kategori": "Kuliner",
+        "perkiraan_harga": "€190-290",
+        "jam_buka": "12:00 - 13:30, 19:00 - 21:00",
+        "order": 2
+      },
+      {
+        "nama": "Foto Cahaya Berkilauan",
+        "deskripsi": "Mengabadikan menara saat berkilauan setiap jam di malam hari",
+        "url_gambar": "",
+        "kategori": "Fotografi",
+        "perkiraan_harga": "Gratis",
+        "jam_buka": "20:00 - 01:00",
+        "order": 3
+      }
+    ],
+    "louvre-museum": [
+      {
+        "nama": "Guided Tour Masterpieces",
+        "deskripsi": "Tur berpemandu mengunjungi karya-karya terkenal seperti Mona Lisa",
+        "url_gambar": "",
+        "kategori": "Budaya",
+        "perkiraan_harga": "€17",
+        "jam_buka": "09:00 - 18:00",
+        "order": 1
+      },
+      {
+        "nama": "Egyptian Antiquities Tour",
+        "deskripsi": "Menjelajahi koleksi artefak Mesir kuno yang luar biasa",
+        "url_gambar": "",
+        "kategori": "Sejarah",
+        "perkiraan_harga": "€17",
+        "jam_buka": "09:00 - 18:00",
+        "order": 2
+      },
+      {
+        "nama": "Night Opening Visit",
+        "deskripsi": "Mengunjungi museum dengan suasana lebih tenang di malam hari",
+        "url_gambar": "",
+        "kategori": "Budaya",
+        "perkiraan_harga": "€17",
+        "jam_buka": "18:00 - 21:45 (Jumat)",
+        "order": 3
+      }
+    ],
+    "cliffs-of-moher": [
+      {
+        "nama": "Coastal Walk",
+        "deskripsi": "Berjalan kaki di sepanjang tebing dengan pemandangan laut yang dramatis",
+        "url_gambar": "",
+        "kategori": "Alam",
+        "perkiraan_harga": "€8",
+        "jam_buka": "08:00 - 21:00",
+        "order": 1
+      },
+      {
+        "nama": "Bird Watching",
+        "deskripsi": "Mengamati puffin dan burung laut lainnya di habitat alami mereka",
+        "url_gambar": "",
+        "kategori": "Alam",
+        "perkiraan_harga": "€8",
+        "jam_buka": "08:00 - 21:00",
+        "order": 2
+      },
+      {
+        "nama": "Sunset Photography",
+        "deskripsi": "Mengabadikan matahari terbenam yang spektakuler di tebing",
+        "url_gambar": "",
+        "kategori": "Fotografi",
+        "perkiraan_harga": "€8",
+        "jam_buka": "18:00 - 21:00",
+        "order": 3
+      }
+    ],
+    "trinity-college": [
+      {
+        "nama": "Book of Kells Exhibition",
+        "deskripsi": "Melihat manuskrip abad ke-9 yang terkenal dengan ilustrasi indah",
+        "url_gambar": "",
+        "kategori": "Sejarah",
+        "perkiraan_harga": "€14",
+        "jam_buka": "09:30 - 17:00",
+        "order": 1
+      },
+      {
+        "nama": "Long Room Library Tour",
+        "deskripsi": "Mengunjungi perpustakaan megah dengan 200.000 buku kuno",
+        "url_gambar": "",
+        "kategori": "Budaya",
+        "perkiraan_harga": "€14",
+        "jam_buka": "09:30 - 17:00",
+        "order": 2
+      },
+      {
+        "nama": "Campus Walking Tour",
+        "deskripsi": "Tur berjalan kaki mengelilingi kampus bersejarah yang indah",
+        "url_gambar": "",
+        "kategori": "Budaya",
+        "perkiraan_harga": "Gratis",
+        "jam_buka": "08:00 - 22:00",
+        "order": 3
+      }
+    ]
+  }
+}
