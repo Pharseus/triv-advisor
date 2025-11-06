@@ -1,0 +1,23 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Allow read access to all countries and their sub-collections
+    match /countries/{countryId} {
+      allow read: if true;
+      allow write: if false; // Only admin can write via Firebase Console
+      
+      // Allow read access to places
+      match /places/{placeId} {
+        allow read: if true;
+        allow write: if false;
+        
+        // Allow read access to activities
+        match /activities/{activityId} {
+          allow read: if true;
+          allow write: if false;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "trip-advisor",
+  "version": "1.0.0",
+  "description": "Travel destination web app with Firebase Firestore",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server -p 8000 -o",
+    "deploy": "firebase deploy",
+    "deploy:hosting": "firebase deploy --only hosting",
+    "deploy:firestore": "firebase deploy --only firestore"
+  },
+  "keywords": [
+    "travel",
+    "firebase",
+    "firestore",
+    "trip-advisor"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "firebase-tools": "^13.0.0"
+  },
+  "dependencies": {
+    "firebase-admin": "^13.5.0"
+  }
+}
